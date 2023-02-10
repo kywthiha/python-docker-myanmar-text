@@ -22,7 +22,7 @@ exampleText = """
 def main(myanmarText):
     original = Image.open("mango-lunar-banner.jpg")
     draw = ImageDraw.Draw(original,"RGBA")
-    font = ImageFont.truetype("Padauk-bold.ttf", 20)
+    font = ImageFont.truetype("mmrtextb.ttf", 20)
     margin = offset = 0
     for line in textwrap.wrap(myanmarText, width=200):
         bbox = draw.textbbox((margin, offset), line, font=font)
